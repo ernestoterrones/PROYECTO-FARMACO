@@ -8,27 +8,27 @@
         {
           "id": "ansio-1",
           "nombre": "Valeria Pam (Diazepam)",
-          "bio": "Soy tranquila y confiable. Me gusta quedarme contigo bastante tiempo y darte paz profunda.",
-          "atributos": "✓ Me quedo contigo por horas, alivio intenso y prolongado",
-          "redflag": "✗ No soy ideal si tienes que rendir al máximo al día siguiente",
+          "bio": "🗒️Soy tranquila y confiable. Me gusta quedarme contigo bastante tiempo y darte paz profunda. (Potenciador GABA)",
+          "atributos": "🌟Me quedo contigo por horas, no te dejo sola tan rápido y te puedo acompañar en tus momentos de crisis",
+          "redflag": "🚩No soy buena acompañante si tienes que rendir al 100% al día siguiente",
           "foto": "Diazepam.png",
           "esCorrecto": false
         },
         {
           "id": "ansio-2",
           "nombre": "Lore Alpra (Alprazolam)",
-          "bio": "No me gustan los rodeos. Si estás mal, voy directo al punto.",
-          "atributos": "✓ Alivio rápido en momentos de crisis máxima",
-          "redflag": "✗ Con uso prolongado, desarrollarás dependencia rápidamente",
+          "bio": "🗒️No me gustan los rodeos. Si estás mal, voy directo al punto para hablar lo que te causa tu malestar",
+          "atributos": "🌟Estaré contigo de manera rápida cuando te sientas muy ansioso.",
+          "redflag": "🚩Si te juntas mucho conmigo, luego no te vas a poder separar de mi muy fácil.",
           "foto": "Alprazolam.png",
           "esCorrecto": false
         },
         {
           "id": "ansio-3",
           "nombre": "Clara Lora (Lorazepam)",
-          "bio": "Me gusta el control, la estabilidad y las decisiones pensadas.",
-          "atributos": "✓ Equilibrio perfecto entre alivio y funcionamiento cognitivo",
-          "redflag": "✗ Más moderada, no es la más 'fulminante'",
+          "bio": "🗒️Me gusta el control, la estabilidad y las decisiones pensadas. (Ansiolítico equilibrado).",
+          "atributos": "🌟Soy una excelente compañera cuando sientas que tu ansiedad es sostenida",
+          "redflag": "🚩 Si buscas algo 'fulminante',quizá no soy tu tipo; ya que no soy la más intensa",
           "foto": "Lorazepam.png",
           "esCorrecto": true
         }
