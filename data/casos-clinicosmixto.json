@@ -101,6 +101,40 @@
           "esCorrecto": true
         }
       ]
+    },
+    {
+     "id": 4,
+      "categoria": "OPIOIDES",
+      "descripcion": "Varón de 52 años con dolor lumbar crónico por hernia discal.Ha tenido malas experiencias con tratamientos muy fuertes que lo dejaron “apagado”.Le gusta sentir alivio, pero sin perder el control ni la claridad mental.",
+      "perfiles": [
+        {
+          "id": "opioide-1",
+          "nombre": "Mora Lina(Morfina)",
+          "bio": "Apasionada, intensa y sin miedo a entregarse por completo. Creo en los vínculos profundos, de esos que lo ocupan todo y no dejan espacio para medias tintas.",
+          "atributos": "✓ Cuando el dolor se vuelve protagonista, no me escondo ni doy excusas (analgesia potente).Tengo mucha experiencia acompañando procesos difíciles (amplio uso clínico).Si amas fuerte, yo amo más (alta eficacia).",
+          "redflag": "✗ A veces me quedo más de la cuenta y me cuesta soltar (metabolitos activos).Puedo dejarte un poco confundido y sin energía (sedación).Si eres sensible, puedo quitarte el aire sin querer (depresión respiratoria).",
+          "foto": "Morfina.png",
+          "esCorrecto": false
+        },
+        {
+          "id": "opioide-2",
+          "nombre": "Trina Dol(Tramadol)",
+          "bio": "Creativa, sensible y algo impredecible",
+          "atributos": "✓ No soy tan intensa, me gusta ir de a pocos (opioide débil).Tengo más de una forma de conectar (doble mecanismo).Parezco una opción segura al inicio (menor estigma).",
+          "redflag": "✗ Cuando la intensidad sube, me quedo corta (analgesia insuficiente).A veces mezclo demasiado las emociones (serotonina).No siempre reacciono bien al estrés (convulsiones).",
+          "foto": "Tramadol.png",
+          "esCorrecto": false
+        },
+        {
+          "id": "opioide-3",
+          "nombre": "Oliva Dona(Oxicodona)",
+          "bio": "Equilibrada, constante y clara con lo que ofrece",
+          "atributos": "✓Me gusta acompañar con intensidad, pero sin desbordar (analgesia potente y controlada).No necesito exagerar para funcionar bien (mejor perfil cognitivo).Sé quedarme sin nublarte la cabeza (menos confusión que morfina).",
+          "redflag": "✗ Más costoso, monitoreo cardiovascular recomendado",
+          "foto": "Oxicodona.png",
+          "esCorrecto": true
+        }
+      ]
     }
   ]
 }
