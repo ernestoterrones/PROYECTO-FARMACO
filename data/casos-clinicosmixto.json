@@ -76,27 +76,27 @@
         {
           "id": "aine-1",
           "nombre": "Dina (Diclofenaco)",
-          "bio": "Soy la más común y económica, efecto rápido.",
-          "atributos": "✓ Muy efectiva para dolor articular, precio accesible",
-          "redflag": "✗ Alto riesgo gastrointestinal, especialmente en úlcera previa",
+          "bio": "🗒️Soy la más común y económica, efecto rápido.",
+          "atributos": "🌟 Muy efectiva para dolor articular, precio accesible",
+          "redflag": "🚩 Alto riesgo gastrointestinal, especialmente en úlcera previa",
           "foto": "Diclofenaco.png",
           "esCorrecto": false
         },
         {
           "id": "aine-2",
           "nombre": "Katy (Ketorolaco)",
-          "bio": "Soy la más potente pero también la más riesgosa.",
-          "atributos": "✓ Potencia máxima para dolor severo",
-          "redflag": "✗ Cardiotoxicidad y nefrotoxicidad importantes",
+          "bio": "🗒️Soy la más potente pero también la más riesgosa.",
+          "atributos": "🌟 Potencia máxima para dolor severo",
+          "redflag": "🚩 Cardiotoxicidad y nefrotoxicidad importantes",
           "foto": "Ketorolaco.png",
           "esCorrecto": false
         },
         {
           "id": "aine-3",
           "nombre": "Selena (Celecoxib)",
-          "bio": "Soy selectiva para COX-2, protegiendo el estómago.",
-          "atributos": "✓ Selectivo COX-2, seguro para gastroprotección",
-          "redflag": "✗ Más costoso, monitoreo cardiovascular recomendado",
+          "bio": "🗒️Soy selectiva para COX-2, protegiendo el estómago.",
+          "atributos": "🌟 Selectivo COX-2, seguro para gastroprotección",
+          "redflag": "🚩 Más costoso, monitoreo cardiovascular recomendado",
           "foto": "Celecoxib.png",
           "esCorrecto": true
         }
@@ -110,27 +110,27 @@
         {
           "id": "opioide-1",
           "nombre": "Mora Lina(Morfina)",
-          "bio": "Apasionada, intensa y sin miedo a entregarse por completo. Creo en los vínculos profundos, de esos que lo ocupan todo y no dejan espacio para medias tintas.",
-          "atributos": "✓ Cuando el dolor se vuelve protagonista, no me escondo ni doy excusas (analgesia potente).Tengo mucha experiencia acompañando procesos difíciles (amplio uso clínico).Si amas fuerte, yo amo más (alta eficacia).",
-          "redflag": "✗ A veces me quedo más de la cuenta y me cuesta soltar (metabolitos activos).Puedo dejarte un poco confundido y sin energía (sedación).Si eres sensible, puedo quitarte el aire sin querer (depresión respiratoria).",
+          "bio": "🗒️Apasionada, intensa y sin miedo a entregarse por completo. Creo en los vínculos profundos, de esos que lo ocupan todo y no dejan espacio para medias tintas.",
+          "atributos": "🌟 Cuando el dolor se vuelve protagonista, no me escondo ni doy excusas (analgesia potente).Tengo mucha experiencia acompañando procesos difíciles (amplio uso clínico).Si amas fuerte, yo amo más (alta eficacia).",
+          "redflag": "🚩 A veces me quedo más de la cuenta y me cuesta soltar (metabolitos activos).Puedo dejarte un poco confundido y sin energía (sedación).Si eres sensible, puedo quitarte el aire sin querer (depresión respiratoria).",
           "foto": "Morfina.png",
           "esCorrecto": false
         },
         {
           "id": "opioide-2",
           "nombre": "Trina Dol(Tramadol)",
-          "bio": "Creativa, sensible y algo impredecible",
-          "atributos": "✓ No soy tan intensa, me gusta ir de a pocos (opioide débil).Tengo más de una forma de conectar (doble mecanismo).Parezco una opción segura al inicio (menor estigma).",
-          "redflag": "✗ Cuando la intensidad sube, me quedo corta (analgesia insuficiente).A veces mezclo demasiado las emociones (serotonina).No siempre reacciono bien al estrés (convulsiones).",
+          "bio": "🗒️Creativa, sensible y algo impredecible",
+          "atributos": "🌟 No soy tan intensa, me gusta ir de a pocos (opioide débil).Tengo más de una forma de conectar (doble mecanismo).Parezco una opción segura al inicio (menor estigma).",
+          "redflag": "🚩 Cuando la intensidad sube, me quedo corta (analgesia insuficiente).A veces mezclo demasiado las emociones (serotonina).No siempre reacciono bien al estrés (convulsiones).",
           "foto": "Tramadol.png",
           "esCorrecto": false
         },
         {
           "id": "opioide-3",
           "nombre": "Oliva Dona(Oxicodona)",
-          "bio": "Equilibrada, constante y clara con lo que ofrece",
-          "atributos": "✓Me gusta acompañar con intensidad, pero sin desbordar (analgesia potente y controlada).No necesito exagerar para funcionar bien (mejor perfil cognitivo).Sé quedarme sin nublarte la cabeza (menos confusión que morfina).",
-          "redflag": "✗ Más costoso, monitoreo cardiovascular recomendado",
+          "bio": "🗒️Equilibrada, constante y clara con lo que ofrece",
+          "atributos": "🌟Me gusta acompañar con intensidad, pero sin desbordar (analgesia potente y controlada).No necesito exagerar para funcionar bien (mejor perfil cognitivo).Sé quedarme sin nublarte la cabeza (menos confusión que morfina).",
+          "redflag": "🚩 Más costoso, monitoreo cardiovascular recomendado",
           "foto": "Oxicodona.png",
           "esCorrecto": true
         }
@@ -144,27 +144,27 @@
         {
           "id": "antibiotico-1",
           "nombre": "Maxi(Amoxicilina)",
-          "bio": "Soy de los que van al grano, amable pero firme. Me adapto fácil al estómago, y me encanta mantener las cosas simples: si hay un estreptococo por ahí, lo elimino sin drama.",
-          "atributos": "✓ Alta eficacia contra Streptococcus pyogenes.Buena absorción oral (se puede tomar con o sin comida).Poca toxicidad, uso seguro en la mayoría de edades y condiciones.",
-          "redflag": "✗ En raros casos, reacciones alérgicas o erupciones si hay mononucleosis infecciosa. “Si eres alérgica a penicilinas, mejor no nos encontremos.”",
+          "bio": "🗒️Soy de los que van al grano, amable pero firme. Me adapto fácil al estómago, y me encanta mantener las cosas simples: si hay un estreptococo por ahí, lo elimino sin drama.",
+          "atributos": "🌟 Alta eficacia contra Streptococcus pyogenes.Buena absorción oral (se puede tomar con o sin comida).Poca toxicidad, uso seguro en la mayoría de edades y condiciones.",
+          "redflag": "🚩 En raros casos, reacciones alérgicas o erupciones si hay mononucleosis infecciosa. “Si eres alérgica a penicilinas, mejor no nos encontremos.”",
           "foto": "Amoxicilina.png",
           "esCorrecto": true
         },
         {
           "id": "antibiotico-3",
           "nombre": "Max pichicateado (Amoxicilina + ácido clavulánico)",
-          "bio": "Soy potente y me protejo bien de las enzimas que quieren romperme, pero... puedo ser algo duro de digerir",
-          "atributos": "✓ Amplio espectro, resistente a β-lactamasas.Excelente opción cuando hay sospecha de coinfección o resistencia bacteriana",
-          "redflag": "✗ Puede causar diarrea y alteraciones hepáticas.“Si el enemigo es solo una pequeña bacteria, soy demasiado: te mereces algo más sencillo.”",
+          "bio": "🗒️Soy potente y me protejo bien de las enzimas que quieren romperme, pero... puedo ser algo duro de digerir",
+          "atributos": "🌟 Amplio espectro, resistente a β-lactamasas.Excelente opción cuando hay sospecha de coinfección o resistencia bacteriana",
+          "redflag": "🚩 Puede causar diarrea y alteraciones hepáticas.“Si el enemigo es solo una pequeña bacteria, soy demasiado: te mereces algo más sencillo.”",
           "foto": "AmoxicilinaClavulanico.png",
           "esCorrecto": false
         },
         {
           "id": "antibiotico-3",
           "nombre": "Azi Flash(Azitromicina)",
-          "bio": "Voy rápido y soy moderno, me gusta hacer las cosas en tres días y desaparecer. Pero... no soy siempre fiel al objetivo",
-          "atributos": "✓Cómodo (1 toma al día, por 3 días).Buena alternativa solo si hay alergia a penicilinas.",
-          "redflag": "✗ Resistencias crecientes en estreptococos. Riesgo de prolongar el QT en algunos corazones sensibles.“No soy tu primera opción si puedes tener una relación más estable (penicilina).”",
+          "bio": "🗒️Voy rápido y soy moderno, me gusta hacer las cosas en tres días y desaparecer. Pero... no soy siempre fiel al objetivo",
+          "atributos": "🌟Cómodo (1 toma al día, por 3 días).Buena alternativa solo si hay alergia a penicilinas.",
+          "redflag": "🚩 Resistencias crecientes en estreptococos. Riesgo de prolongar el QT en algunos corazones sensibles.“No soy tu primera opción si puedes tener una relación más estable (penicilina).”",
           "foto": "Azitromicina.png",
           "esCorrecto": false
         }
