@@ -76,9 +76,9 @@
         {
           "id": "aine-1",
           "nombre": "Dina (Diclofenaco)",
-          "bio": "🗒️Soy la más común y económica, efecto rápido.",
-          "atributos": "🌟 Muy efectiva para dolor articular, precio accesible",
-          "redflag": "🚩 Alto riesgo gastrointestinal, especialmente en úlcera previa",
+          "bio": "🗒️Soy la chica del barrio, a la que todo el mundo conoce. Si tienes un dolor, yo soy la primera a la que llamas. Soy fuerte, tradicional y no me ando con rodeos.",
+          "atributos": "🌟 Resuelvo tus problemas de dolor rápido y sin que tengas que pensarlo dos veces. Soy económica, no te voy a dejar la cartera vacía.",
+          "redflag": "🚩 Soy un desastre en la cocina, soy conocida por arruinar estómagos. La mayoría de mis comidas son muy ácidas. Soy como soy, no voy a cambiar mi forma de actuar por ti. Si tu estómago es sensible, vamos a tener problemas.",
           "foto": "Diclofenaco.png",
           "esCorrecto": false
         },
