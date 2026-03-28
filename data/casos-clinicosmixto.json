@@ -103,7 +103,7 @@
       ]
     },
     {
-     "id": 4,
+      "id": 4,
       "categoria": "OPIOIDES",
       "descripcion": "Varón de 52 años con dolor lumbar crónico por hernia discal.Ha tenido malas experiencias con tratamientos muy fuertes que lo dejaron “apagado”.Le gusta sentir alivio, pero sin perder el control ni la claridad mental.",
       "perfiles": [
@@ -133,6 +133,40 @@
           "redflag": "✗ Más costoso, monitoreo cardiovascular recomendado",
           "foto": "Oxicodona.png",
           "esCorrecto": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "categoria": "ANTIBIOTICOS",
+      "descripcion": "Mujer de 16 años, sana, que consulta por dolor de garganta, fiebre y amígdalas con exudado desde hace 2 días. Se sospecha de que se trate de una Faringoamigdalitis bacteriana(Streptococo Beta Hemolítico-Grupo A)",
+      "perfiles": [
+        {
+          "id": "antibiotico-1",
+          "nombre": "Maxi(Amoxicilina)",
+          "bio": "Soy de los que van al grano, amable pero firme. Me adapto fácil al estómago, y me encanta mantener las cosas simples: si hay un estreptococo por ahí, lo elimino sin drama.",
+          "atributos": "✓ Alta eficacia contra Streptococcus pyogenes.Buena absorción oral (se puede tomar con o sin comida).Poca toxicidad, uso seguro en la mayoría de edades y condiciones.",
+          "redflag": "✗ En raros casos, reacciones alérgicas o erupciones si hay mononucleosis infecciosa. “Si eres alérgica a penicilinas, mejor no nos encontremos.”",
+          "foto": "Amoxicilina.png",
+          "esCorrecto": true
+        },
+        {
+          "id": "antibiotico-3",
+          "nombre": "Max pichicateado (Amoxicilina + ácido clavulánico)",
+          "bio": "Soy potente y me protejo bien de las enzimas que quieren romperme, pero... puedo ser algo duro de digerir",
+          "atributos": "✓ Amplio espectro, resistente a β-lactamasas.Excelente opción cuando hay sospecha de coinfección o resistencia bacteriana",
+          "redflag": "✗ Puede causar diarrea y alteraciones hepáticas.“Si el enemigo es solo una pequeña bacteria, soy demasiado: te mereces algo más sencillo.”",
+          "foto": "AmoxicilinaClavulanico.png",
+          "esCorrecto": false
+        },
+        {
+          "id": "antibiotico-3",
+          "nombre": "Azi Flash(Azitromicina)",
+          "bio": "Voy rápido y soy moderno, me gusta hacer las cosas en tres días y desaparecer. Pero... no soy siempre fiel al objetivo",
+          "atributos": "✓Cómodo (1 toma al día, por 3 días).Buena alternativa solo si hay alergia a penicilinas.",
+          "redflag": "✗ Resistencias crecientes en estreptococos. Riesgo de prolongar el QT en algunos corazones sensibles.“No soy tu primera opción si puedes tener una relación más estable (penicilina).”",
+          "foto": "Azitromicina.png",
+          "esCorrecto": false
         }
       ]
     }
