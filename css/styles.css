@@ -5,9 +5,16 @@
 }
 
 body {
-  margin: 0;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
+  min-height: 100vh;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Elementos decorativos */
