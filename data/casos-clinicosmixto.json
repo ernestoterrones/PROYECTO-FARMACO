@@ -42,20 +42,20 @@
         {
           "id": "cardio-1",
           "nombre": "Queca (IECA)",
-          "bio": "Soy efectiva con el corazón y protejo tus riñones también.",
-          "atributos": "✓ Excelente para diabéticos, protege riñones",
-          "redflag": "✗ Puedo causar tos persistente incómoda",
+          "bio": "🗒️Alma libre, corazón tierno. Amo viajar, el arte, la buena música y las conexiones sinceras. Prima de Sara",
+          "atributos": "🌟Vegana (No riesgo de gota), no odio la carne, pero sí el maltrato animal que conlleva. Deseo un amor que se viva con intensidad y me dé mi lugar.",
+          "redflag": "🚩Soy la loca de los gatos: Soy dueña de 15 y 3 màs por adoptar. No tolero princesos que no estén obsesionados conmigo: si eres de esos 50/50 (normotensos) puedes acabar mal (Riesgo hipovolemia).",
           "foto": "IECA.png",
           "esCorrecto": false
         },
         {
           "id": "cardio-2",
           "nombre": "Sara (ARA II)",
-          "bio": "Similar a Queca, pero sin la tos molesta.",
-          "atributos": "✓ Bien tolerada, similar protección renal",
-          "redflag": "✗ Más costosa que IECA",
+          "bio": "🗒️Dulce, risueña y con buen corazón. Me gustan los pequeños detalles y las buenas conversaciones. Prima de Queca.",
+          "atributos": "🌟Crecí en una familia vegetariana, desde chiquita me disgusta la carne. Deseo a un chico que ame con intensidad (hipertensión) que me trate como princesa.",
+          "redflag": "🚩Busco intensidad , no medias tintas (normotensión). Si amas con miedo, sigue deslizando. Aquí se viene a sentir fuerte… o no se viene.",
           "foto": "ARAII.png",
-          "esCorrecto": false
+          "esCorrecto": true
         },
         {
           "id": "cardio-3",
@@ -64,7 +64,7 @@
           "atributos": "✓ Reduce rápidamente presión y volumen",
           "redflag": "✗ Requiere monitoreo de electrolitos, no ideal como monoterapia",
           "foto": "Furosemida.png",
-          "esCorrecto": true
+          "esCorrecto": false
         }
       ]
     },
