@@ -151,7 +151,7 @@
           "esCorrecto": true
         },
         {
-          "id": "antibiotico-3",
+          "id": "antibiotico-2",
           "nombre": "Max pichicateado (Amoxicilina + ácido clavulánico)",
           "bio": "🗒️Soy potente y me protejo bien de las enzimas que quieren romperme, pero... puedo ser algo duro de digerir",
           "atributos": "🌟 Amplio espectro, resistente a β-lactamasas.Excelente opción cuando hay sospecha de coinfección o resistencia bacteriana",
@@ -166,6 +166,40 @@
           "atributos": "🌟Cómodo (1 toma al día, por 3 días).Buena alternativa solo si hay alergia a penicilinas.",
           "redflag": "🚩 Resistencias crecientes en estreptococos. Riesgo de prolongar el QT en algunos corazones sensibles.“No soy tu primera opción si puedes tener una relación más estable (penicilina).”",
           "foto": "Azitromicina.png",
+          "esCorrecto": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "categoria": "ENDOCRINOLOGIA",
+      "descripcion": "Mauricio de 40 años el chico mas dulce del vecindario presenta, todas las chicas y chicos se mueren por él. Sin embargo, ha subido mucho de peso, debido a una dieta alta en calorías y grasas, además trabaja de oficinista y casi nunca hace deporte. Además detalla que en las últimas semanas ha tenido mucha sed, toma agua todo el día, pero aún así no lo sacia. También, menciona que come normal o incluso más que antes. Últimamente se hizo una herida al estar corriendo, y se percató que se demoró en sanar. ¿Quién podría ayudarlo?",
+      "perfiles": [
+        {
+          "id": "endocrino-1",
+          "nombre": "Guanito (Metformina)",
+          "bio": "🗒️Soy de Ayacucho y tengo dos guanacos (biguanidas). Me gusta hacer las cosas con calma y sin prisas. Si buscas control y constancia, soy tu mejor opción",
+          "atributos": "🌟Te ayudaré a controlar lo dulce que eres de forma eficiente y sin cambios drásticos, además cuido mucho de tu peso.",
+          "redflag": "🚩 Vivo en el paradero B12, es algo peligroso (hipocobalaminemia). Suelo ser algo ácido si me provocan mucho. No me gustan los lácteos. (acidosis láctica)",
+          "foto": "Metformina.png",
+          "esCorrecto": true
+        },
+        {
+          "id": "endocrino-2",
+          "nombre": "Katerina Yiel Pi(Liraglutida)",
+          "bio": "🗒️Soy de China y te mantendré motivado a largo plazo. Si necesitas a alguien que trabaje en equipo contigo, soy la indicada.",
+          "atributos": "🌟 Sé que eres dulce, yo lo calmaré de una forma fina (insulina). Sentirás mariposas en el estómago que no tendrás hambre (saciedad) y bajarás de peso",
+          "redflag": "🚩No me ducho y huelo mal, tanto que te daré vómitos y náuseas (problemas GI), si has tenido un problema con Pancracia, mejor piénsalo dos veces (pancreatitis)",
+          "foto": "Liraglutida.png",
+          "esCorrecto": false
+        },
+        {
+          "id": "endocrino-3",
+          "nombre": "Emma Siglita (Empaglifozina)",
+          "bio": "🗒️Soy nefróloga (nefroprotector) soy eficiente, tranquila, y si tienes algo de más, yo me encargaré de que lo sueltes",
+          "atributos": "🌟Te puedo ayudar a mejorar en tu aspecto físico, y no necesitas ser dulce con otras, porque yo protegeré tu corazón hasta tus riñones (indicado en HFrEF, ERC)",
+          "redflag": "🚩 No me cuido por ahí abajo, así que te puedo infectar. (infección urinaria) Soy tan tóxica que te puedes morir de sed y se te puede bajar la presión (deshidratación e hipotensión).",
+          "foto": "Empaglifozina.png",
           "esCorrecto": false
         }
       ]
