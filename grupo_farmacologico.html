@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Grupos Farmacológicos - FarmacoTinder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Sora", sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      position: relative;
+      padding-top: 0;
+      overflow-x: hidden;
+    }
+
+    /* Elementos decorativos */
+    body::before {
+      content: '';
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+      top: -150px;
+      left: -150px;
+    }
+
+    body::after {
+      content: '';
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+      border-radius: 50%;
+      bottom: -100px;
+      right: -100px;
+    }
+
+    /* Contenedor principal */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+    .header {
+      width: 100%;
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      margin-top: 10px;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .header-logo {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .header-logo img {
+      width: 35px;
+      height: 35px;
+      object-fit: contain;
+    }
+
+    .header-text h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1a1a2e;
+      font-family: "Outfit", sans-serif;
+      margin: 0;
+    }
+
+    .header-text p {
+      font-size: 12px;
+      color: #999;
+      margin: 2px 0 0 0;
+    }
+
+    /* Botón volver */
+    .btn-back {
+      background: white;
+      color: #667eea;
+      border: 2px solid #667eea;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+
+    .btn-back:hover {
+      background: #667eea;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+    }
+
+    /* Sección de contenido */
+    .content {
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .content-header {
+      text-align: center;
+      color: white;
+      margin-bottom: 40px;
+      animation: fadeInDown 0.8s ease;
+    }
+
+    .content-header h2 {
+      font-size: 40px;
+      font-weight: 700;
+      font-family: "Outfit", sans-serif;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+
+    .content-header p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.85);
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* GRID */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      width: 100%;
+      animation: fadeInUp 0.8s ease 0.2s backwards;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* TARJETAS */
+    .grid-container a {
+      text-decoration: none;
+    }
+
+    .card-btn {
+      background: white;
+      border: 0;
+      border-radius: 16px;
+      padding: 24px 16px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      color: #1a1a2e;
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      min-height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Outfit", sans-serif;
+      letter-spacing: -0.3px;
+    }
+
+    .card-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+      transition: left 0.6s ease;
+    }
+
+    .card-btn:hover::before {
+      left: 100%;
+    }
+
+    .card-btn::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 16px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: -1;
+    }
+
+    .card-btn:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(102, 126, 234, 0.25);
+      color: white;
+    }
+
+    .card-btn:hover::after {
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+
+      .content-header h2 {
+        font-size: 28px;
+      }
+
+      .header {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .btn-back {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+
+      .container {
+        padding: 12px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <div class="header">
+      <div class="header-left">
+        <div class="header-logo">
+          <img src="assets/images/michigato.png" alt="FarmacoTinder">
+        </div>
+        <div class="header-text">
+          <h1>FarmacoTinder</h1>
+          <p>Grupos Farmacológicos</p>
+        </div>
+      </div>
+      <a href="index.html" class="btn-back">
+        <i class="fas fa-arrow-left"></i> Volver
+      </a>
+    </div>
+
+    <div class="content">
+      <div class="content-header">
+        <h2>Grupos Farmacológicos</h2>
+        <p>Selecciona una categoría para comenzar tu aprendizaje interactivo</p>
+      </div>
+
+      <div class="grid-container">
+        <a href="juego.html?categoria=ansioliticos"><button class="card-btn">Ansiolíticos</button></a>
+        <a href="juego.html?categoria=antihipertensivos"><button class="card-btn">Antihipertensivos</button></a>
+        <a href="juego.html?categoria=antibioticos"><button class="card-btn">Antibióticos</button></a>
+        <a href="juego.html?categoria=antiinflamatorios"><button class="card-btn">Antiinflamatorios</button></a>
+        <a href="juego.html?categoria=analgesicos"><button class="card-btn">Analgésicos</button></a>
+        <a href="juego.html?categoria=antialergicos"><button class="card-btn">Antihistamínicos</button></a>
+        <a href="juego.html?categoria=antidiabeticos"><button class="card-btn">Antidiabéticos</button></a>
+        <a href="juego.html?categoria=anticonvulsivos"><button class="card-btn">Anticonvulsivos</button></a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+            gap: 15px;
+        }
+        .card-btn {
+            font-size: 11px;
+            height: 70px;
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="btn-back">← VOLVER AL MENÚ</a>
+
+  <div class="grid-container">
+    <a href="juego.html?categoria=betabloqueadores" style="text-decoration: none;">
+        <button class="card-btn">Betabloqueadores</button>
+    </a>
+    <a href="juego.html?categoria=moduladoresraa" style="text-decoration: none;">
+        <button class="card-btn">Moduladores del sistema RAA</button>
+    </a>
+    <a href="juego.html?categoria=diureticos" style="text-decoration: none;">
+        <button class="card-btn">Diuréticos</button>
+    </a>
+    <a href="juego.html?categoria=ieca" style="text-decoration: none;">
+        <button class="card-btn">IECA</button>
+    </a>
+    <a href="juego.html?categoria=calcioantagonistas" style="text-decoration: none;">
+        <button class="card-btn">Calcioantagonistas</button>
+    </a>
+    
+    <a href="juego.html?categoria=anticoagulantes" style="text-decoration: none;">
+        <button class="card-btn">Anticoagulantes y Antiagregantes</button>
+    </a>
+    <a href="juego.html?categoria=hipolipemiantes" style="text-decoration: none;">
+        <button class="card-btn">Hipolipemiantes</button>
+    </a>
+    <a href="juego.html?categoria=aines" style="text-decoration: none;">
+        <button class="card-btn">AINES</button>
+    </a>
+    <a href="juego.html?categoria=ansioliticos" style="text-decoration: none;">
+        <button class="card-btn">Ansiolíticos</button>
+    </a>
+    <a href="juego.html?categoria=antiparkinsonianos" style="text-decoration: none;">
+        <button class="card-btn">Antiparkinsonianos</button>
+    </a>
+    
+    <a href="juego.html?categoria=antiepilepticos" style="text-decoration: none;">
+        <button class="card-btn">Antiepilépticos</button>
+    </a>
+    <a href="juego.html?categoria=antidepresivos" style="text-decoration: none;">
+        <button class="card-btn">Antidepresivos</button>
+    </a>
+    <a href="juego.html?categoria=hipoglicemiantes" style="text-decoration: none;">
+        <button class="card-btn">Hipoglicemiantes</button>
+    </a>
+    <a href="juego.html?categoria=corticoides" style="text-decoration: none;">
+        <button class="card-btn">Corticoides</button>
+    </a>
+    <a href="juego.html?categoria=antibioticos" style="text-decoration: none;">
+        <button class="card-btn">Antibióticos</button>
+    </a>
+
+    <a href="juego.html?categoria=tiroideos" style="text-decoration: none;">
+        <button class="card-btn">Tiroideos</button>
+    </a>
+    <a href="juego.html?categoria=corticoides" style="text-decoration: none;">
+        <button class="card-btn">Corticoides</button>
+    </a>
+    <a href="juego.html?categoria=antivirales" style="text-decoration: none;">
+        <button class="card-btn">Antivirales</button>
+    </a>
+    <a href="juego.html?categoria=antiparasitarios" style="text-decoration: none;">
+        <button class="card-btn">Antiparasitarios</button>
+    </a>
+    <a href="juego.html?categoria=antifungico" style="text-decoration: none;">
+        <button class="card-btn">Antifungico</button>
+    </a>
+  </div>
+
+</body>
+
+</html>

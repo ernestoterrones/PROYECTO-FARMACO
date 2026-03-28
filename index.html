@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarmacoTinder - Plataforma Educativa</title>
+
+  <!-- Power by JwConsultora -->
+  <!-- Consultora JW | Contacto: 996944981 | jwconsultoraconsultora@gmail.com -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  
+  <!-- Estilos locales -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/index-responsive.css">
+</head>
+
+<body>
+
+  <!-- SPLASH SCREEN -->
+  <div class="splash" id="splash">
+    <div class="splash-content">
+      <div class="splash-logo">
+        <img src="assets/images/michigato.png" alt="FarmacoTinder">
+      </div>
+      <div class="splash-text">
+        <h1>FarmacoTinder</h1>
+        <p>Domina la Farmacología Interactivamente</p>
+      </div>
+      <div class="splash-dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN APP -->
+  <div class="app" id="app">
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header-logo">
+        <img src="assets/images/michigato.png" alt="FarmacoTinder">
+      </div>
+      <h1>FarmacoTinder</h1>
+      <p>Plataforma educativa de farmacología</p>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="content-title">Elige tu modo de estudio</div>
+
+      <div class="option" onclick="selectMode('farmaco')">
+        <div class="option-icon">
+          <i class="fas fa-flask-vial"></i>
+        </div>
+        <div class="option-text">
+          <h3>Grupos Farmacológicos</h3>
+          <p>Aprende la clasificación de medicamentos por mecanismo de acción</p>
+        </div>
+      </div>
+
+      <div class="option" onclick="selectMode('clinica')">
+        <div class="option-icon">
+          <i class="fas fa-heart-pulse"></i>
+        </div>
+        <div class="option-text">
+          <h3>Casos Clínicos</h3>
+          <p>Resuelve casos médicos reales de diferentes especialidades</p>
+        </div>
+      </div>
+
+      <div class="option" onclick="selectMode('mixto')">
+        <div class="option-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <div class="option-text">
+          <h3>Desafío Mixto</h3>
+          <p>Combina farmacología y clínica en escenarios complejos</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      🎓 FarmacoTinder v2.0 • Sistema Educativo para Medicina<br>
+      <small style="display: block; margin-top: 8px; line-height: 1.6;">
+       <a href="mailto:jwconsultoraconsultora@gmail.com" style="color: inherit; text-decoration: none;"> Powered By Consultora JW</a>
+      </small>
+    </div>
+  </div>
+
+  <!-- SweetAlert2 Script -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <!-- Script principal -->
+  <script>
+    // Verificar si debe saltarse el splash screen
+    if (sessionStorage.getItem('skipSplash') === 'true') {
+      // Saltarse el splash, mostrar app directamente
+      sessionStorage.removeItem('skipSplash');
+      document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('splash').style.display = 'none';
+        document.getElementById('app').classList.add('active');
+      });
+    } else {
+      // Mostrar app después del splash (comportamiento normal)
+      setTimeout(() => {
+        document.getElementById('splash').style.display = 'none';
+        document.getElementById('app').classList.add('active');
+      }, 3800);
+    }
+
+    function selectMode(mode) {
+      const modeInfo = {
+        farmaco: {
+          title: '🧪 Grupos Farmacológicos',
+          text: '¿Estás listo para explorar la clasificación de medicamentos?',
+          url: 'grupo_farmacologico.html'
+        },
+        clinica: {
+          title: '💊 Casos Clínicos',
+          text: '¿Preparado para resolver casos médicos reales?',
+          url: 'especialidad_clinica.html'
+        },
+        mixto: {
+          title: '🎮 Desafío Mixto',
+          text: '¿Listo para el desafío combinado de farmacología clínica?',
+          url: 'modo_mixto.html'
+        }
+      };
+
+      Swal.fire({
+        title: modeInfo[mode].title,
+        text: modeInfo[mode].text,
+        icon: 'question',
+        iconColor: '#667eea',
+        showCancelButton: true,
+        confirmButtonText: '¡Vamos!',
+        cancelButtonText: 'Aún no',
+        confirmButtonColor: '#667eea',
+        cancelButtonColor: '#999',
+        backdrop: 'rgba(0,0,0,0.4)',
+        allowOutsideClick: false
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            title: '¡Iniciando!',
+            text: 'Preparando el desafío...',
+            icon: 'success',
+            iconColor: '#2ecc71',
+            timer: 1200,
+            timerProgressBar: true,
+            didOpen: () => {
+              Swal.showLoading();
+            },
+            willClose: () => {
+              window.location.href = modeInfo[mode].url;
+            }
+          });
+        }
+      });
+    }
+
+    // 🎨 Easter Egg - Developer Signature
+    console.log(
+      '%c🚀 DESENVOLVIMIENTO DE PLATAFORMAS EDUCATIVAS 🚀\n' +
+      '%cConsultora JW - Especialistas en Soluciones Web y Móviles\n\n' +
+      '%c📞 Contacto: +51 996944981\n' +
+      '%c📧 Email: jwconsultoraconsultora@gmail.com\n\n' +
+      '%c✨ Servicios de Desarrollo:\n' +
+      '%c• Aplicaciones Web Interactivas\n' +
+      '%c• Plataformas Educativas Innovadoras\n' +
+      '%c• Sistemas de Gestión Personalizado\n' +
+      '%c• Diseño UX/UI Profesional\n\n' +
+      '%c¡Transformamos tus ideas en soluciones digitales!',
+      'background: #1a1a2e; color: #667eea; padding: 10px 15px; font-weight: bold; font-size: 14px; font-family: Outfit; border-radius: 4px;',
+      'background: #1a1a2e; color: #999999; padding: 5px 15px; font-size: 12px; font-weight: 600; font-family: Sora;',
+      'background: #1a1a2e; color: #e0e0e0; padding: 3px 15px; font-size: 11px; font-family: Sora;',
+      'background: #1a1a2e; color: #e0e0e0; padding: 3px 15px; font-size: 11px; font-family: Sora;',
+      'background: #1a1a2e; color: #667eea; padding: 5px 15px; font-size: 12px; font-weight: bold; font-family: Sora;',
+      'background: #1a1a2e; color: #cccccc; padding: 2px 15px; font-size: 11px; font-family: Sora;',
+      'background: #1a1a2e; color: #cccccc; padding: 2px 15px; font-size: 11px; font-family: Sora;',
+      'background: #1a1a2e; color: #cccccc; padding: 2px 15px; font-size: 11px; font-family: Sora;',
+      'background: #1a1a2e; color: #cccccc; padding: 2px 15px; font-size: 11px; font-family: Sora;',
+      'background: #1a1a2e; color: #2ecc71; padding: 8px 15px; font-size: 12px; font-weight: bold; font-family: Sora; border-radius: 4px;'
+    );
+  </script>
+
+</body>
+</html>

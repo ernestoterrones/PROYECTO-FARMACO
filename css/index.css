@@ -1,0 +1,460 @@
+/* ============================================
+   FARMACOTINDER - INDEX STYLES
+   Profesional, Minimalista, Impactante
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* ============================================
+   SPLASH SCREEN - PANTALLA DE INICIO
+   ============================================ */
+
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeOutSplash 0.8s ease-out forwards;
+  animation-delay: 3.5s;
+  overflow: hidden;
+}
+
+.splash::before {
+  content: '';
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  top: -100%;
+  left: -100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+  animation: rotateBg 25s linear infinite;
+}
+
+@keyframes rotateBg {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.splash-content {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  animation: fadeInSplash 0.8s ease-out;
+}
+
+@keyframes fadeInSplash {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.splash-logo {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 32px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgba(255,255,255,0.3);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.4);
+  animation: bounceLogo 2.8s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+}
+
+@keyframes bounceLogo {
+  0% { transform: scale(1) translateY(0); }
+  50% { transform: scale(1.08) translateY(-20px); }
+  100% { transform: scale(1) translateY(0); }
+}
+
+.splash-logo img {
+  width: 88%;
+  height: 88%;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.25));
+}
+
+.splash-text {
+  position: relative;
+  z-index: 10;
+}
+
+.splash h1 {
+  font-size: 56px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 12px;
+  letter-spacing: -1.5px;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  animation: slideInTitle 0.8s ease-out 0.2s both;
+}
+
+@keyframes slideInTitle {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.splash p {
+  font-size: 17px;
+  color: rgba(255,255,255,0.9);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  animation: slideInTitle 0.8s ease-out 0.4s both;
+}
+
+.splash-dots {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  animation: slideInTitle 0.8s ease-out 0.6s both;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.7);
+  animation: pulseLoader 1.4s ease-in-out infinite;
+}
+
+.dot:nth-child(2) { animation-delay: 0.2s; }
+.dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes pulseLoader {
+  0%, 100% { transform: scale(0.4); opacity: 0.4; }
+  50% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeOutSplash {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* ============================================
+   MAIN APP - APLICACIÓN PRINCIPAL
+   ============================================ */
+
+.app {
+  display: none;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  position: relative;
+  z-index: 100;
+  animation: slideUpApp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.app.active {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes slideUpApp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   HEADER - ENCABEZADO
+   ============================================ */
+
+.header {
+  padding: 50px 40px 40px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.header-logo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 24px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255,255,255,0.2);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  animation: floatLogo 3s ease-in-out infinite 0.3s;
+}
+
+@keyframes floatLogo {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.header-logo img {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+}
+
+.header h1 {
+  font-size: 42px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.header p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.85);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* ============================================
+   CONTENT - CONTENIDO
+   ============================================ */
+
+.content {
+  flex: 1;
+  padding: 30px 40px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.95);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+/* ============================================
+   OPTION CARDS - TARJETAS DE OPCIONES
+   ============================================ */
+
+.option {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 24px;
+  padding: 28px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  min-height: 120px;
+  animation: fadeInCard 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.option:nth-child(1) { animation-delay: 0.1s; }
+.option:nth-child(2) { animation-delay: 0.2s; }
+.option:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.option::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.option:hover::before {
+  left: 100%;
+}
+
+.option:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.4);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.option-icon {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.option:hover .option-icon {
+  transform: scale(1.1) rotate(8deg);
+  background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.15));
+}
+
+.option-text h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 6px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.option-text p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* ============================================
+   FOOTER - PIE DE PÁGINA
+   ============================================ */
+
+.footer {
+  padding: 24px 40px;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ============================================
+   SCROLLBAR PERSONALIZADO
+   ============================================ */
+
+.content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* ============================================
+   SWEETALERT PERSONALIZADO
+   ============================================ */
+
+.swal2-popup {
+  font-family: 'Sora', sans-serif !important;
+  border-radius: 24px !important;
+  background: rgba(255,255,255,0.95) !important;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.3) !important;
+  border: 1px solid rgba(102,126,234,0.1) !important;
+}
+
+.swal2-title {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #1a1a2e !important;
+}
+
+.swal2-html-container {
+  color: #666 !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+
+.swal2-confirm, .swal2-cancel {
+  padding: 12px 32px !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  border: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.swal2-confirm {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  box-shadow: 0 4px 15px rgba(102,126,234,0.3) !important;
+}
+
+.swal2-confirm:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(102,126,234,0.4) !important;
+}
+
+.swal2-cancel {
+  background: #f0f0f0 !important;
+  color: #666 !important;
+}
+
+.swal2-cancel:hover {
+  background: #e0e0e0 !important;
+}

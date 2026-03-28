@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modo Mixto - FarmacoTinder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    @keyframes fadeOutTransition {
+      from {
+        opacity: 1;
+        transform: scale(1);
+      }
+      to {
+        opacity: 0;
+        transform: scale(0.98);
+      }
+    }
+    
+    body.fade-out {
+      animation: fadeOutTransition 0.4s ease-out forwards;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header-left">
+        <div class="header-logo">
+          <img src="assets/images/michigato.png" alt="FarmacoTinder">
+        </div>
+        <div class="header-text">
+          <h1>FarmacoTinder</h1>
+          <p>Modo Mixto</p>
+        </div>
+      </div>
+      <button class="btn-back" onclick="volverAlInicio()"><i class="fas fa-arrow-left"></i> Volver</button>
+    </div>
+
+    <!-- PANTALLA INICIAL -->
+    <div id="pantalla-caso" class="main-card">
+      <h2 class="title" id="titulo-caso">Caso Clínico</h2>
+      <div class="speech-bubble" id="texto-descripcion">
+        Cargando caso...
+      </div>
+      <p class="description"><strong>Analiza el caso y selecciona el mejor tratamiento</strong></p>
+      <button class="btn-start" onclick="irAMatch()">🎮 COMENZAR DESAFÍO</button>
+    </div>
+
+    <!-- PANTALLA DE JUEGO -->
+    <div id="pantalla-tinder" class="main-card">
+      <div id="contenedor-tarjetas"></div>
+      <div class="btn-controls">
+        <button class="btn-decision btn-no" onclick="decidir(false)" title="Rechazar">✕</button>
+        <button class="btn-decision btn-yes" onclick="decidir(true)" title="Aceptar">✓</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Función para volver con transición suave
+    function volverAlInicio() {
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        // Indicar a index.html que debe saltarse el splash
+        sessionStorage.setItem('skipSplash', 'true');
+        window.location.href = 'index.html';
+      }, 400);
+    }
+  </script>
+  <script src="js/modo-mixto.js"></script>
+
+</body>
+</html>

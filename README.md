@@ -1,1 +1,2 @@
-# PROYECTO-FARMACO-WEDY
+# Farmacotinder
+Farmacotinder

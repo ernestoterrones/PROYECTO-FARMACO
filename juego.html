@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caso Clínico - FarmacoTinder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #66e0e5 0%, #3b82f6 100%);
+      padding: 20px;
+      gap: 20px;
+      position: relative;
+    }
+
+    /* Logo de fondo sutil */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-image: url('assets/images/Logo_ayudantia.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 550px;
+      opacity: 0.08;
+      z-index: 0;
+    }
+
+    .card-perfil {
+      width: 100%;
+      max-width: 500px;
+      background: white;
+      border-radius: 24px;
+      padding: 0;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+      margin: 0 auto;
+      animation: slideIn 0.4s ease;
+      position: relative;
+      z-index: 1;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card-perfil img {
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+      padding: 20px;
+    }
+
+    .info-fármaco {
+      padding: 24px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .info-fármaco h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: #3b82f6;
+      font-size: 18px;
+    }
+
+    .img-contenedor {
+      width: 100%;
+      background: linear-gradient(135deg, #f0f9ff 0%, #faf9f7 100%);
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .bio-fármaco {
+      text-align: justify;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #555;
+      background: #f8f9fa;
+      padding: 16px;
+      border-radius: 12px;
+      border-left: 4px solid #3b82f6;
+    }
+
+    .bio-fármaco p {
+      margin-bottom: 10px;
+    }
+
+    .bio-fármaco p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Main card for caso */
+    .main-card {
+      background: white;
+      border-radius: 24px;
+      padding: 32px;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+      position: relative;
+      z-index: 1;
+      animation: slideIn 0.4s ease;
+    }
+
+    .main-card h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      margin-bottom: 16px;
+      color: #3b82f6;
+      font-size: 20px;
+    }
+
+    .speech-bubble {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      background: linear-gradient(135deg, #f0f9ff 0%, #faf9f7 100%);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px 0;
+      font-size: 14px;
+      text-align: justify;
+      line-height: 1.6;
+      border-left: 4px solid #66e0e5;
+    }
+
+    .main-card p {
+      color: #555;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    /* Botón principal */
+    .btn-farmacotinder {
+      background: linear-gradient(135deg, #ffd666 0%, #ffc333 100%);
+      color: #333;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .btn-farmacotinder:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Botones de decisión (Swipe) */
+    .btn-decision {
+      border: none;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      color: white;
+      font-size: 32px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+      font-weight: 700;
+      border: 3px solid white;
+    }
+
+    .btn-no {
+      background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+    }
+
+    .btn-no:hover {
+      transform: scale(1.1);
+      box-shadow: 0 12px 30px rgba(255, 107, 107, 0.4);
+    }
+
+    .btn-yes {
+      background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    }
+
+    .btn-yes:hover {
+      transform: scale(1.1);
+      box-shadow: 0 12px 30px rgba(46, 204, 113, 0.4);
+    }
+
+    .btn-back {
+      background: rgba(255, 255, 255, 0.95);
+      color: #3b82f6;
+      padding: 12px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      z-index: 2;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-back:hover {
+      background: white;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    #contenedor-tarjetas {
+      width: 100%;
+      min-height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #pantalla-tinder {
+      display: flex !important;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .btn-controls {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <a href="grupo_farmacologico.html" class="btn-back"><i class="fas fa-arrow-left"></i> Volver</a>
+
+  <div id="pantalla-caso" class="main-card">
+    <h2>Caso Clinico</h2>
+    <div class="speech-bubble">
+      <p id="texto-descripcion"></p>
+    </div>
+    <p><strong>Cual es la mejor opcion farmacologica?</strong></p>
+    <button class="btn-farmacotinder" onclick="irAMatch()">Ver Opciones</button>
+  </div>
+
+  <div id="pantalla-tinder" class="main-card" style="display: none;">
+    <div id="contenedor-tarjetas"></div>
+    <div class="btn-controls">
+      <button class="btn-decision btn-no" onclick="decidir(false)" title="No es la opcion correcta">X</button>
+      <button class="btn-decision btn-yes" onclick="decidir(true)" title="Es la opcion correcta">OK</button>
+    </div>
+  </div>
+
+  <script>
+    const baseDeDatos = {
+        "ansioliticos": {
+            descripcion: "Rocio de 28 anos, estudiante universitaria, con insomnio, ansiedad y crisis de panico ocasionales. Esta mentalmente agotada con palpitaciones nocturnas.",
+            perfiles: [
+                { 
+                    nombre: "Valeria Pam (Diazepam)", 
+                    bio: "Soy tranquila y confiable. Me gusta quedarme contigo bastante tiempo y darte paz profunda.",
+                    atributos:"Me quedo contigo por horas, no te dejo sola tan rápido",
+                    redflag:"No soy buena si tienes que rendir al 100% al dia siguiente",
+                    foto: "Diazepam.png",
+                    esCorrecto: false 
+                },
+                { 
+                    nombre: "Lore Alpra (Alprazolam)", 
+                    bio: "No me gustan los rodeos. Si estas mal, voy directo al punto.",
+                    atributos:"Estare contigo rapidamente cuando te sientas muy ansioso",
+                    redflag:"Si usas mucho de mi, luego cuesta separarme de ti",
+                    foto: "Alprazolam.png",
+                    esCorrecto: false 
+                },
+                {
+                    nombre:"Clara Lora (Lorazepam)",
+                    bio:"Me gusta el control y la estabilidad. Decisiones pensadas.",
+                    atributos:"Soy excelente compañera cuando tu ansiedad es sostenida",
+                    redflag:"No soy la mas intensa ni la mas potente",
+                    foto:"Lorazepam.png",
+                    esCorrecto:true
+                }
+            ]
+        }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const cat = params.get('categoria');
+
+    if (baseDeDatos[cat]) {
+      document.getElementById('texto-descripcion').innerText = baseDeDatos[cat].descripcion;
+    } else {
+      document.getElementById('texto-descripcion').innerText = "Caso no encontrado.";
+    }
+
+    let indiceActual = 0;
+    let perfilesActuales = [];
+
+    function irAMatch() {
+        document.getElementById('pantalla-caso').style.display = 'none';
+        document.getElementById('pantalla-tinder').style.display = 'flex';
+        perfilesActuales = baseDeDatos[cat].perfiles;
+        mostrarPerfil();
+    }
+
+    function mostrarPerfil() {
+        const contenedor = document.getElementById('contenedor-tarjetas');
+        if (indiceActual >= perfilesActuales.length) {
+            contenedor.innerHTML = "<h2 style='color: #3b82f6;'>No hay mas candidatos</h2><p>Sesion completada.</p>";
+            return;
+        }
+
+        const p = perfilesActuales[indiceActual];
+        contenedor.innerHTML = `
+            <div class="card-perfil" id="tarjeta">
+                <div class="img-contenedor">
+                    <img src="assets/images/${p.foto}" alt="${p.nombre}">
+                </div>
+                <div class="info-fármaco">
+                    <h2>${p.nombre}</h2>
+                    <div class="bio-fármaco">
+                        <p>${p.bio}</p>
+                        <p>${p.atributos}</p>
+                        <p>${p.redflag}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    function decidir(acepta) {
+        const tarjeta = document.getElementById('tarjeta');
+        const esCorrecto = perfilesActuales[indiceActual].esCorrecto;
+
+        if (acepta) {
+            tarjeta.style.transform = "translateX(300px) rotate(25deg)";
+            tarjeta.style.opacity = "0";
+            if (esCorrecto) alert("Match Perfecto! Es la mejor opcion farmacologica.");
+            else alert("Opcion no ideal. Sigue practicando.");
+        } else {
+            tarjeta.style.transform = "translateX(-300px) rotate(-25deg)";
+            tarjeta.style.opacity = "0";
+        }
+
+        setTimeout(() => {
+            indiceActual++;
+            mostrarPerfil();
+        }, 500);
+    }
+  </script>
+</body>
+</html>

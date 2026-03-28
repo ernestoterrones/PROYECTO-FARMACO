@@ -1,0 +1,106 @@
+{
+  "casos": [
+    {
+      "id": 1,
+      "categoria": "Ansiolíticos",
+      "descripcion": "Rocío de 28 años, estudiante universitaria, con insomnio, ansiedad y crisis de pánico ocasionales. Está 'mentalmente agotada' con palpitaciones nocturnas y dificultad para relajarse. Busca un tratamiento que la acompañe, pero sin perder el control cognitivo durante sus pruebas.",
+      "perfiles": [
+        {
+          "id": "ansio-1",
+          "nombre": "Valeria Pam (Diazepam)",
+          "bio": "Soy tranquila y confiable. Me gusta quedarme contigo bastante tiempo y darte paz profunda.",
+          "atributos": "✓ Me quedo contigo por horas, alivio intenso y prolongado",
+          "redflag": "✗ No soy ideal si tienes que rendir al máximo al día siguiente",
+          "foto": "Diazepam.png",
+          "esCorrecto": false
+        },
+        {
+          "id": "ansio-2",
+          "nombre": "Lore Alpra (Alprazolam)",
+          "bio": "No me gustan los rodeos. Si estás mal, voy directo al punto.",
+          "atributos": "✓ Alivio rápido en momentos de crisis máxima",
+          "redflag": "✗ Con uso prolongado, desarrollarás dependencia rápidamente",
+          "foto": "Alprazolam.png",
+          "esCorrecto": false
+        },
+        {
+          "id": "ansio-3",
+          "nombre": "Clara Lora (Lorazepam)",
+          "bio": "Me gusta el control, la estabilidad y las decisiones pensadas.",
+          "atributos": "✓ Equilibrio perfecto entre alivio y funcionamiento cognitivo",
+          "redflag": "✗ Más moderada, no es la más 'fulminante'",
+          "foto": "Lorazepam.png",
+          "esCorrecto": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "categoria": "Cardiología",
+      "descripcion": "Varón de 50 años con hipertensión arterial, diabetes tipo 2 y obesidad. Vegetariano. Necesita un tratamiento antihipertensivo que sea seguro a largo plazo, no cause hipotensión severa y sea compatible con su estilo de vida.",
+      "perfiles": [
+        {
+          "id": "cardio-1",
+          "nombre": "Queca (IECA)",
+          "bio": "Soy efectiva con el corazón y protejo tus riñones también.",
+          "atributos": "✓ Excelente para diabéticos, protege riñones",
+          "redflag": "✗ Puedo causar tos persistente incómoda",
+          "foto": "IECA.png",
+          "esCorrecto": false
+        },
+        {
+          "id": "cardio-2",
+          "nombre": "Sara (ARA II)",
+          "bio": "Similar a Queca, pero sin la tos molesta.",
+          "atributos": "✓ Bien tolerada, similar protección renal",
+          "redflag": "✗ Más costosa que IECA",
+          "foto": "ARAII.png",
+          "esCorrecto": false
+        },
+        {
+          "id": "cardio-3",
+          "nombre": "Flor Semida (Furosemida)",
+          "bio": "Diurético potente para casos de sobrecarga hídrica.",
+          "atributos": "✓ Reduce rápidamente presión y volumen",
+          "redflag": "✗ Requiere monitoreo de electrolitos, no ideal como monoterapia",
+          "foto": "Furosemida.png",
+          "esCorrecto": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "categoria": "AINEs",
+      "descripcion": "Varón de 58 años con artrosis severa de rodilla que genera dolor intenso. Tiene antecedente de úlcera péptica hace 3 años. Necesita alivio del dolor sin dañar su tracto gastrointestinal.",
+      "perfiles": [
+        {
+          "id": "aine-1",
+          "nombre": "Dina (Diclofenaco)",
+          "bio": "Soy la más común y económica, efecto rápido.",
+          "atributos": "✓ Muy efectiva para dolor articular, precio accesible",
+          "redflag": "✗ Alto riesgo gastrointestinal, especialmente en úlcera previa",
+          "foto": "Diclofenaco.png",
+          "esCorrecto": false
+        },
+        {
+          "id": "aine-2",
+          "nombre": "Katy (Ketorolaco)",
+          "bio": "Soy la más potente pero también la más riesgosa.",
+          "atributos": "✓ Potencia máxima para dolor severo",
+          "redflag": "✗ Cardiotoxicidad y nefrotoxicidad importantes",
+          "foto": "Ketorolaco.png",
+          "esCorrecto": false
+        },
+        {
+          "id": "aine-3",
+          "nombre": "Selena (Celecoxib)",
+          "bio": "Soy selectiva para COX-2, protegiendo el estómago.",
+          "atributos": "✓ Selectivo COX-2, seguro para gastroprotección",
+          "redflag": "✗ Más costoso, monitoreo cardiovascular recomendado",
+          "foto": "Celecoxib.png",
+          "esCorrecto": true
+        }
+      ]
+    }
+  ]
+}

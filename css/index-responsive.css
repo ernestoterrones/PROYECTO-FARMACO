@@ -1,0 +1,137 @@
+/* ============================================
+   RESPONSIVE STYLES - ESTILOS RESPONSIVOS
+   ============================================ */
+
+@media (max-width: 480px) {
+  /* SPLASH RESPONSIVE */
+  .splash h1 {
+    font-size: 40px;
+  }
+
+  .splash p {
+    font-size: 15px;
+  }
+
+  .splash-logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 24px;
+  }
+
+  /* HEADER RESPONSIVE */
+  .header {
+    padding: 30px 24px 24px;
+  }
+
+  .header-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 16px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .header p {
+    font-size: 14px;
+  }
+
+  /* CONTENT RESPONSIVE */
+  .content {
+    padding: 20px 24px;
+    gap: 16px;
+  }
+
+  .content-title {
+    font-size: 18px;
+  }
+
+  /* OPTION CARDS RESPONSIVE */
+  .option {
+    padding: 20px;
+    min-height: 100px;
+    border-radius: 18px;
+  }
+
+  .option-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .option-text h3 {
+    font-size: 16px;
+  }
+
+  .option-text p {
+    font-size: 12px;
+  }
+
+  /* FOOTER RESPONSIVE */
+  .footer {
+    padding: 16px 24px;
+    font-size: 11px;
+  }
+}
+
+/* Tablets y dispositivos medianos */
+@media (max-width: 768px) {
+  .splash h1 {
+    font-size: 48px;
+  }
+
+  .header h1 {
+    font-size: 36px;
+  }
+
+  .header {
+    padding: 40px 32px 32px;
+  }
+
+  .content {
+    padding: 25px 32px;
+  }
+
+  .option {
+    padding: 24px;
+  }
+}
+
+/* Devices muy pequeños */
+@media (max-width: 360px) {
+  .splash {
+    padding: 20px;
+  }
+
+  .splash h1 {
+    font-size: 32px;
+  }
+
+  .splash-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .option {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .option-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .option-text h3 {
+    font-size: 14px;
+  }
+
+  .option-text p {
+    font-size: 11px;
+  }
+}
