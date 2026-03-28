@@ -339,11 +339,11 @@ body {
 }
 
 .option-icon {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   min-width: 60px;
   background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
-  border-radius: 16px;
+  border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
