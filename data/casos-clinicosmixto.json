@@ -85,9 +85,9 @@
         {
           "id": "aine-2",
           "nombre": "Katy (Ketorolaco)",
-          "bio": "🗒️Soy la más potente pero también la más riesgosa.",
-          "atributos": "🌟 Potencia máxima para dolor severo",
-          "redflag": "🚩 Cardiotoxicidad y nefrotoxicidad importantes",
+          "bio": "🗒️Soy la adrenalina pura, la emoción fuerte. Cuando el dolor es insoportable, yo soy la única luz en tu oscuridad. Soy intensa, apasionada y te haré olvidar tu sufrimiento... por un rato",
+          "atributos": "🌟 Soy la más fuerte de todas. Cuando las demás fallan, yo te rescato. No te haré esperar, soy tu heroína en una crisis",
+          "redflag": "🚩Soy tan intensa que desgasto tu energía vital (tóxico para riñones) y tu cocina (estómago) queda hecha un desastre.",
           "foto": "Ketorolaco.png",
           "esCorrecto": false
         },
@@ -96,7 +96,7 @@
           "nombre": "Selena (Celecoxib)",
           "bio": "🗒️Soy selectiva para COX-2, protegiendo el estómago.",
           "atributos": "🌟 Selectivo COX-2, seguro para gastroprotección",
-          "redflag": "🚩 Más costoso, monitoreo cardiovascular recomendado",
+          "redflag": "🚩 Soy más costosay además, en raras ocasiones, puedo provocarte una tos seca persistente.",
           "foto": "Celecoxib.png",
           "esCorrecto": true
         }
@@ -111,26 +111,26 @@
           "id": "opioide-1",
           "nombre": "Mora Lina(Morfina)",
           "bio": "🗒️Apasionada, intensa y sin miedo a entregarse por completo. Creo en los vínculos profundos, de esos que lo ocupan todo y no dejan espacio para medias tintas.",
-          "atributos": "🌟 Cuando el dolor se vuelve protagonista, no me escondo ni doy excusas (analgesia potente).Tengo mucha experiencia acompañando procesos difíciles (amplio uso clínico).Si amas fuerte, yo amo más (alta eficacia).",
-          "redflag": "🚩 A veces me quedo más de la cuenta y me cuesta soltar (metabolitos activos).Puedo dejarte un poco confundido y sin energía (sedación).Si eres sensible, puedo quitarte el aire sin querer (depresión respiratoria).",
+          "atributos": "🌟 Cuando el dolor se vuelve protagonista, no me escondo ni doy excusas. Tengo mucha experiencia acompañando procesos difíciles. Me esfuerzo para que la relación funcione (alta eficacia).",
+          "redflag": "🚩 A veces me quedo más de la cuenta y me cuesta soltar. Puedo dejarte un poco confundido y sin energía. Si eres sensible, puedo sentir que soy asfixiante.",
           "foto": "Morfina.png",
           "esCorrecto": false
         },
         {
           "id": "opioide-2",
           "nombre": "Trina Dol(Tramadol)",
-          "bio": "🗒️Creativa, sensible y algo impredecible",
-          "atributos": "🌟 No soy tan intensa, me gusta ir de a pocos (opioide débil).Tengo más de una forma de conectar (doble mecanismo).Parezco una opción segura al inicio (menor estigma).",
-          "redflag": "🚩 Cuando la intensidad sube, me quedo corta (analgesia insuficiente).A veces mezclo demasiado las emociones (serotonina).No siempre reacciono bien al estrés (convulsiones).",
+          "bio": "🗒️Creativa, sensible y algo impredecible. Me gusta pensar que soy distinta a las demás.",
+          "atributos": "🌟 No soy tan intensa, me gusta ir de a pocos y ver cómo fluye todo. Tengo más de una forma de conectar. Suelo ser bien vista al inicio porque parezco más suave y accesible.",
+          "redflag": "🚩 Cuando la relación se vuelve realmente intensa, empiezo a quedarme corta. A veces mezclo demasiado las emociones y el ambiente se vuelve raro. Si la situación se sale de control, puedo reaccionar mal.",
           "foto": "Tramadol.png",
           "esCorrecto": false
         },
         {
           "id": "opioide-3",
           "nombre": "Oliva Dona(Oxicodona)",
-          "bio": "🗒️Equilibrada, constante y clara con lo que ofrece",
-          "atributos": "🌟Me gusta acompañar con intensidad, pero sin desbordar (analgesia potente y controlada).No necesito exagerar para funcionar bien (mejor perfil cognitivo).Sé quedarme sin nublarte la cabeza (menos confusión que morfina).",
-          "redflag": "🚩 Más costoso, monitoreo cardiovascular recomendado",
+          "bio": "🗒️Tranquila, presente y con una intensidad que sabe cuándo parar. No hago promesas exageradas: prefiero demostrar",
+          "atributos": "🌟Escucho antes de actuar y me adapto a lo que necesitas. Puedo amar con intensidad sin volverlo caótico ni asfixiante, funciono bien en las relaciones largas. Me importa que sigas siendo tú (perfil cognitivo)",
+          "redflag": "🚩 Puedo llegar a ser dependiente emocional si confundimos las cosas. Requiero compromiso y responsabilidad mutua para que todo fluya bien, no me gusta esperar 'a ver qué pasa'",
           "foto": "Oxicodona.png",
           "esCorrecto": true
         }
@@ -144,27 +144,27 @@
         {
           "id": "antibiotico-1",
           "nombre": "Maxi(Amoxicilina)",
-          "bio": "🗒️Soy de los que van al grano, amable pero firme. Me adapto fácil al estómago, y me encanta mantener las cosas simples: si hay un estreptococo por ahí, lo elimino sin drama.",
-          "atributos": "🌟 Alta eficacia contra Streptococcus pyogenes.Buena absorción oral (se puede tomar con o sin comida).Poca toxicidad, uso seguro en la mayoría de edades y condiciones.",
-          "redflag": "🚩 En raros casos, reacciones alérgicas o erupciones si hay mononucleosis infecciosa. “Si eres alérgica a penicilinas, mejor no nos encontremos.”",
+          "bio": "🗒️Soy un chico de sonrisa confiada, cuidadoso y equilibrado. Me adapto fácil al estómago, y me encanta mantener las cosas simples",
+          "atributos": "🌟 Seré constante contigo, paso a paso haré que te sientas mejor (elimino a S. pyogenes). Soy fácil de llevar, me adapto a tu ritmo sin causar molestias (excelente tolerancia gastrointestinal). Cuando pruebes mis labios jamás me vas a olvidar (suspensión con mejor sabor)",
+          "redflag": "🚩 Si no te caigo bien yo o mi familia, lo nuestro puede ser peligroso (reacción alérgica a penicilinas).",
           "foto": "Amoxicilina.png",
           "esCorrecto": true
         },
         {
           "id": "antibiotico-2",
           "nombre": "Max pichicateado (Amoxicilina + ácido clavulánico)",
-          "bio": "🗒️Soy potente y me protejo bien de las enzimas que quieren romperme, pero... puedo ser algo duro de digerir",
-          "atributos": "🌟 Amplio espectro, resistente a β-lactamasas.Excelente opción cuando hay sospecha de coinfección o resistencia bacteriana",
-          "redflag": "🚩 Puede causar diarrea y alteraciones hepáticas.“Si el enemigo es solo una pequeña bacteria, soy demasiado: te mereces algo más sencillo.”",
+          "bio": "🗒️Soy el hermano gemelo de maxi, no me compares, yo soy potente y puedo protegerte de todo lo que te hace daño, aunque a veces puedo ser algo duro.",
+          "atributos": "🌟 Soy tan fuerte que me puedo defender a mí, así como te puedo defender a ti (resistencia a β-lactamasas). Estoy listo para cuando las cosas se complican (uso en infecciones mixtas o resistentes).",
+          "redflag": "🚩 Puedo ser un poco pesado y hacerte sentir mal (náusea, diarrea).",
           "foto": "AmoxicilinaClavulanico.png",
           "esCorrecto": false
         },
         {
           "id": "antibiotico-3",
           "nombre": "Azi Flash(Azitromicina)",
-          "bio": "🗒️Voy rápido y soy moderno, me gusta hacer las cosas en tres días y desaparecer. Pero... no soy siempre fiel al objetivo",
-          "atributos": "🌟Cómodo (1 toma al día, por 3 días).Buena alternativa solo si hay alergia a penicilinas.",
-          "redflag": "🚩 Resistencias crecientes en estreptococos. Riesgo de prolongar el QT en algunos corazones sensibles.“No soy tu primera opción si puedes tener una relación más estable (penicilina).”",
+          "bio": "🗒️Soy un chico moderno: rápido, práctico y con estilo. Llego, hago mi magia y me voy antes de que te des cuenta.",
+          "atributos": "🌟Te cuidaré sin atarte por mucho tiempo (tratamiento corto de 3 días). Actúo veloz, directo al corazón del problema (acción ribosoma 50S, inhibe síntesis proteica). Yo estaré ahí para ti si otro te hizo daño (uso en pacientes alérgicos a penicilinas)",
+          "redflag": "🚩 Algunos ya no me creen tanto, dicen que no siempre cumplo (resistencias crecientes en S. pyogenes). Puedo romperte el corazón, si no me tratas con cuidado (riesgo de prolongación del QT)",
           "foto": "Azitromicina.png",
           "esCorrecto": false
         }
@@ -178,7 +178,7 @@
         {
           "id": "endocrino-1",
           "nombre": "Guanito (Metformina)",
-          "bio": "🗒️Soy de Ayacucho y tengo dos guanacos (biguanidas). Me gusta hacer las cosas con calma y sin prisas. Si buscas control y constancia, soy tu mejor opción",
+          "bio": "🗒️Soy de Ayacucho y tengo dos guanacos (biguanidas). Me gusta hacer las cosas con calma y sin prisas. Si buscas control y constancia, soy tu mejor opción (primera línea).",
           "atributos": "🌟Te ayudaré a controlar lo dulce que eres de forma eficiente y sin cambios drásticos, además cuido mucho de tu peso.",
           "redflag": "🚩 Vivo en el paradero B12, es algo peligroso (hipocobalaminemia). Suelo ser algo ácido si me provocan mucho. No me gustan los lácteos. (acidosis láctica)",
           "foto": "Metformina.png",
